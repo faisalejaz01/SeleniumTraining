@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23742" started-at="2018-09-14T19:57:18Z" finished-at="2018-09-14T19:57:41Z">
+  <suite name="Default suite" duration-ms="23531" started-at="2018-09-17T12:49:59Z" finished-at="2018-09-17T12:50:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23742" started-at="2018-09-14T19:57:18Z" finished-at="2018-09-14T19:57:41Z">
+    <test name="Default test" duration-ms="23531" started-at="2018-09-17T12:49:59Z" finished-at="2018-09-17T12:50:23Z">
       <class name="BasicExercisesTestNG.NewTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="invokeBrowser" is-config="true" duration-ms="2943" started-at="2018-09-14T19:57:18Z" finished-at="2018-09-14T19:57:21Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="invokeBrowser" is-config="true" duration-ms="2809" started-at="2018-09-17T12:49:59Z" finished-at="2018-09-17T12:50:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="testLogin()[pri:1, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testLogin" duration-ms="1215" started-at="2018-09-14T19:57:21Z" finished-at="2018-09-14T19:57:22Z">
+        <test-method status="PASS" signature="testLogin()[pri:1, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testLogin" duration-ms="1294" started-at="2018-09-17T12:50:02Z" finished-at="2018-09-17T12:50:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testDropDown()[pri:2, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testDropDown" duration-ms="663" started-at="2018-09-14T19:57:22Z" finished-at="2018-09-14T19:57:22Z">
+        <test-method status="PASS" signature="testDropDown()[pri:2, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testDropDown" duration-ms="640" started-at="2018-09-17T12:50:04Z" finished-at="2018-09-17T12:50:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDropDown -->
-        <test-method status="PASS" signature="testRadioButton()[pri:3, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testRadioButton" duration-ms="366" started-at="2018-09-14T19:57:22Z" finished-at="2018-09-14T19:57:23Z">
+        <test-method status="PASS" signature="testRadioButton()[pri:3, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testRadioButton" duration-ms="461" started-at="2018-09-17T12:50:04Z" finished-at="2018-09-17T12:50:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadioButton -->
-        <test-method status="PASS" signature="testWebTables()[pri:4, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testWebTables" duration-ms="499" started-at="2018-09-14T19:57:23Z" finished-at="2018-09-14T19:57:23Z">
+        <test-method status="PASS" signature="testWebTables()[pri:4, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testWebTables" duration-ms="427" started-at="2018-09-17T12:50:05Z" finished-at="2018-09-17T12:50:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWebTables -->
-        <test-method status="PASS" signature="testDynamicWait()[pri:6, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testDynamicWait" duration-ms="5377" started-at="2018-09-14T19:57:23Z" finished-at="2018-09-14T19:57:29Z">
+        <test-method status="PASS" signature="testDynamicWait()[pri:6, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testDynamicWait" duration-ms="5318" started-at="2018-09-17T12:50:05Z" finished-at="2018-09-17T12:50:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDynamicWait -->
-        <test-method status="PASS" signature="testAlerts()[pri:7, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testAlerts" duration-ms="225" started-at="2018-09-14T19:57:29Z" finished-at="2018-09-14T19:57:29Z">
+        <test-method status="PASS" signature="testAlerts()[pri:7, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testAlerts" duration-ms="207" started-at="2018-09-17T12:50:10Z" finished-at="2018-09-17T12:50:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAlerts -->
-        <test-method status="PASS" signature="testWindows()[pri:8, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testWindows" duration-ms="1386" started-at="2018-09-14T19:57:29Z" finished-at="2018-09-14T19:57:30Z">
+        <test-method status="PASS" signature="testWindows()[pri:8, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testWindows" duration-ms="1323" started-at="2018-09-17T12:50:11Z" finished-at="2018-09-17T12:50:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWindows -->
-        <test-method status="PASS" signature="testFileUpload()[pri:9, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testFileUpload" duration-ms="390" started-at="2018-09-14T19:57:30Z" finished-at="2018-09-14T19:57:31Z">
+        <test-method status="PASS" signature="testFileUpload()[pri:9, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testFileUpload" duration-ms="360" started-at="2018-09-17T12:50:12Z" finished-at="2018-09-17T12:50:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFileUpload -->
-        <test-method status="PASS" signature="testWaitForHiddenObject()[pri:10, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testWaitForHiddenObject" duration-ms="5236" started-at="2018-09-14T19:57:31Z" finished-at="2018-09-14T19:57:36Z">
+        <test-method status="PASS" signature="testWaitForHiddenObject()[pri:10, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testWaitForHiddenObject" duration-ms="5251" started-at="2018-09-17T12:50:12Z" finished-at="2018-09-17T12:50:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWaitForHiddenObject -->
-        <test-method status="PASS" signature="testWaitForTextAttribute()[pri:11, instance:BasicExercisesTestNG.NewTest@33f88ab]" name="testWaitForTextAttribute" duration-ms="5408" started-at="2018-09-14T19:57:36Z" finished-at="2018-09-14T19:57:41Z">
+        <test-method status="PASS" signature="testWaitForTextAttribute()[pri:11, instance:BasicExercisesTestNG.NewTest@59e5ddf]" name="testWaitForTextAttribute" duration-ms="5404" started-at="2018-09-17T12:50:18Z" finished-at="2018-09-17T12:50:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWaitForTextAttribute -->

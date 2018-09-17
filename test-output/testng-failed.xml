@@ -5,9 +5,16 @@
     <classes>
       <class name="BasicExercisesTestNG.NewTest">
         <methods>
+          <include name="testWebTables"/>
           <include name="testWaitForHiddenObject"/>
           <include name="testWaitForTextAttribute"/>
+          <include name="testAlerts"/>
+          <include name="testDynamicWait"/>
           <include name="testFileUpload"/>
+          <include name="testLogin"/>
+          <include name="testRadioButton"/>
+          <include name="testWindows"/>
+          <include name="testDropDown"/>
           <include name="invokeBrowser"/>
         </methods>
       </class> <!-- BasicExercisesTestNG.NewTest -->

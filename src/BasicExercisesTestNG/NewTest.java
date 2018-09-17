@@ -16,6 +16,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+
 public class NewTest {
 
 	WebDriver driver;
@@ -23,7 +24,7 @@ public class NewTest {
 	@BeforeTest
 	public void invokeBrowser() {
 
-		String chromeDriverPath = "d:\\work\\tools\\chromedriver.exe";
+		String chromeDriverPath = "C:\\chromedriver\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 
 		driver = new ChromeDriver();
