@@ -1,4 +1,4 @@
-package BasicExercisesTestNG;
+package test.java;
 
 import java.util.List;
 import java.util.Set;
@@ -20,7 +20,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class NewRemoteTestFF {
+public class NewRemoteFFTest {
 
 	WebDriver driver;
 

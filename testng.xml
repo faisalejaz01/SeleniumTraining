@@ -4,8 +4,8 @@
 
 	<test name="RemoteTest">
 		<classes>
-			<class name="BasicExercisesTestNG.NewRemoteTest" />
-			<class name="BasicExercisesTestNG.NewRemoteTestFF" />
+			<class name="test.java.NewRemoteTest" />
+			<class name="test.java.NewRemoteFFTest" />
 		</classes>
 	</test>
 	

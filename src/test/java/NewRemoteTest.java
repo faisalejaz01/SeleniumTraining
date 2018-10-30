@@ -1,4 +1,4 @@
-package BasicExercisesTestNG;
+package test.java;
 
 import java.util.List;
 import java.util.Set;
