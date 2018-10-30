@@ -194,7 +194,7 @@ public class NewRemoteTest {
 
 		WebElement loadingBar = driver.findElement(By.id("loading"));
 		wait.until(ExpectedConditions.invisibilityOf(loadingBar));
-		driver.close();
+		driver.quit();
 
 	}
 

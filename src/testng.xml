@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes"  thread-count="2">
+
+	<test name="RemoteTest">
+		<classes>
+			<class name="test.java.NewRemoteTest" />
+			<class name="test.java.NewRemoteFFTest" />
+		</classes>
+	</test>
+	
+</suite>
