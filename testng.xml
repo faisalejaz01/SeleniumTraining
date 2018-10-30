@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="BasicExercisesTestNG.NewTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name="Suite" parallel="classes"  thread-count="1">
+
+	<test name="RemoteTest">
+		<classes>
+			<class name="BasicExercisesTestNG.NewRemoteTest" />
+			<class name="BasicExercisesTestNG.NewRemoteTestFF" />
+		</classes>
+	</test>
+	
+</suite>
