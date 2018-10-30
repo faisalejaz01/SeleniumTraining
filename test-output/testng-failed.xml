@@ -1,34 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
-  <test thread-count="1" name="RemoteTest(failed)" parallel="classes">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="2" name="RemoteTest(failed)" parallel="classes">
     <classes>
       <class name="BasicExercisesTestNG.NewRemoteTest">
         <methods>
-          <include name="testAlerts"/>
-          <include name="testDropDown"/>
-          <include name="testDynamicWait"/>
-          <include name="testWebTables"/>
-          <include name="testRadioButton"/>
           <include name="testWaitForTextAttribute"/>
-          <include name="testWaitForHiddenObject"/>
-          <include name="testWindows"/>
           <include name="invokeBrowser"/>
-          <include name="testLogin"/>
         </methods>
       </class> <!-- BasicExercisesTestNG.NewRemoteTest -->
       <class name="BasicExercisesTestNG.NewRemoteTestFF">
         <methods>
           <include name="testWaitForTextAttribute"/>
-          <include name="testWaitForHiddenObject"/>
-          <include name="testWindows"/>
           <include name="invokeBrowser"/>
-          <include name="testLogin"/>
-          <include name="testAlerts"/>
-          <include name="testDropDown"/>
-          <include name="testDynamicWait"/>
-          <include name="testWebTables"/>
-          <include name="testRadioButton"/>
         </methods>
       </class> <!-- BasicExercisesTestNG.NewRemoteTestFF -->
     </classes>

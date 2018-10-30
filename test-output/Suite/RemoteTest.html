@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>RemoteTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 30 10:59:47 EDT 2018</td>
+<td>Started on:</td><td>Tue Oct 30 11:25:59 EDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>137 seconds (137622 ms)</td>
+<tr><td>Total time:</td><td>82 seconds (82243 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,258 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='BasicExercisesTestNG.NewRemoteTestFF.testWaitForTextAttribute()'><b>testWaitForTextAttribute</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IJELQFM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 102, moz:profile: /tmp/rust_mozprofile.xf4ZCJ..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-38-generic, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: baca0524-a877-449c-abde-bd1...}
+Session ID: baca0524-a877-449c-abde-bd1535308fd6
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1405)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$400(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1393)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1389)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at BasicExercisesTestNG.NewRemoteTestFF.testWaitForTextAttribute(NewRemoteTestFF.java:202)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Failed to connect to /10.238.242.216:4444
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	... 21 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 41 more
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace200535157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace200535157'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IJELQFM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 102, moz:profile: /tmp/rust_mozprofile.xf4ZCJ..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-38-generic, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: baca0524-a877-449c-abde-bd1...}
+Session ID: baca0524-a877-449c-abde-bd1535308fd6
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1405)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$400(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1393)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1389)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at BasicExercisesTestNG.NewRemoteTestFF.testWaitForTextAttribute(NewRemoteTestFF.java:202)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Failed to connect to /10.238.242.216:4444
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	... 21 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 41 more
+</pre></div></td>
+<td>45</td>
+<td>BasicExercisesTestNG.NewRemoteTestFF@371a67ec</td></tr>
+<tr>
+<td title='BasicExercisesTestNG.NewRemoteTest.testWaitForTextAttribute()'><b>testWaitForTextAttribute</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IJELQFM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41703}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 9d8be7246ece980370c01f1127a...}
+Session ID: 9d8be7246ece980370c01f1127a05dde
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1405)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$400(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1393)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1389)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at BasicExercisesTestNG.NewRemoteTest.testWaitForTextAttribute(NewRemoteTest.java:196)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Failed to connect to /10.238.242.216:4444
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	... 21 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 41 more
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace935563113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace935563113'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IJELQFM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41703}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 9d8be7246ece980370c01f1127a...}
+Session ID: 9d8be7246ece980370c01f1127a05dde
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1405)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$400(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1393)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1389)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at BasicExercisesTestNG.NewRemoteTest.testWaitForTextAttribute(NewRemoteTest.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Failed to connect to /10.238.242.216:4444
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	... 21 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	... 41 more
+</pre></div></td>
+<td>45</td>
+<td>BasicExercisesTestNG.NewRemoteTest@262b2c86</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,95 +327,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='BasicExercisesTestNG.NewRemoteTest.testAlerts()'><b>testAlerts</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
-<td></td>
-<td>0</td>
-<td>BasicExercisesTestNG.NewRemoteTest@57250572</td></tr>
-<tr>
 <td title='BasicExercisesTestNG.NewRemoteTestFF.testAlerts()'><b>testAlerts</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
 <td></td>
 <td>0</td>
-<td>BasicExercisesTestNG.NewRemoteTestFF@5609159b</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTestFF@371a67ec</td></tr>
+<tr>
+<td title='BasicExercisesTestNG.NewRemoteTest.testAlerts()'><b>testAlerts</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
+<td></td>
+<td>0</td>
+<td>BasicExercisesTestNG.NewRemoteTest@262b2c86</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTest.testDropDown()'><b>testDropDown</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
 <td></td>
-<td>1</td>
-<td>BasicExercisesTestNG.NewRemoteTest@57250572</td></tr>
+<td>0</td>
+<td>BasicExercisesTestNG.NewRemoteTest@262b2c86</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTestFF.testDropDown()'><b>testDropDown</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
 <td></td>
-<td>1</td>
-<td>BasicExercisesTestNG.NewRemoteTestFF@5609159b</td></tr>
+<td>0</td>
+<td>BasicExercisesTestNG.NewRemoteTestFF@371a67ec</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTest.testDynamicWait()'><b>testDynamicWait</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
 <td></td>
 <td>5</td>
-<td>BasicExercisesTestNG.NewRemoteTest@57250572</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTest@262b2c86</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTestFF.testDynamicWait()'><b>testDynamicWait</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
 <td></td>
 <td>5</td>
-<td>BasicExercisesTestNG.NewRemoteTestFF@5609159b</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTestFF@371a67ec</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTest.testLogin()'><b>testLogin</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
 <td></td>
-<td>2</td>
-<td>BasicExercisesTestNG.NewRemoteTest@57250572</td></tr>
+<td>6</td>
+<td>BasicExercisesTestNG.NewRemoteTest@262b2c86</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTestFF.testLogin()'><b>testLogin</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
 <td></td>
-<td>5</td>
-<td>BasicExercisesTestNG.NewRemoteTestFF@5609159b</td></tr>
+<td>9</td>
+<td>BasicExercisesTestNG.NewRemoteTestFF@371a67ec</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTest.testRadioButton()'><b>testRadioButton</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
 <td></td>
 <td>0</td>
-<td>BasicExercisesTestNG.NewRemoteTest@57250572</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTest@262b2c86</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTestFF.testRadioButton()'><b>testRadioButton</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
 <td></td>
 <td>0</td>
-<td>BasicExercisesTestNG.NewRemoteTestFF@5609159b</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTestFF@371a67ec</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTest.testWaitForHiddenObject()'><b>testWaitForHiddenObject</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
 <td></td>
 <td>5</td>
-<td>BasicExercisesTestNG.NewRemoteTest@57250572</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTest@262b2c86</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTestFF.testWaitForHiddenObject()'><b>testWaitForHiddenObject</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
 <td></td>
 <td>5</td>
-<td>BasicExercisesTestNG.NewRemoteTestFF@5609159b</td></tr>
-<tr>
-<td title='BasicExercisesTestNG.NewRemoteTest.testWaitForTextAttribute()'><b>testWaitForTextAttribute</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
-<td></td>
-<td>5</td>
-<td>BasicExercisesTestNG.NewRemoteTest@57250572</td></tr>
-<tr>
-<td title='BasicExercisesTestNG.NewRemoteTestFF.testWaitForTextAttribute()'><b>testWaitForTextAttribute</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
-<td></td>
-<td>6</td>
-<td>BasicExercisesTestNG.NewRemoteTestFF@5609159b</td></tr>
-<tr>
-<td title='BasicExercisesTestNG.NewRemoteTest.testWebTables()'><b>testWebTables</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
-<td></td>
-<td>0</td>
-<td>BasicExercisesTestNG.NewRemoteTest@57250572</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTestFF@371a67ec</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTestFF.testWebTables()'><b>testWebTables</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
 <td></td>
 <td>0</td>
-<td>BasicExercisesTestNG.NewRemoteTestFF@5609159b</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTestFF@371a67ec</td></tr>
+<tr>
+<td title='BasicExercisesTestNG.NewRemoteTest.testWebTables()'><b>testWebTables</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
+<td></td>
+<td>0</td>
+<td>BasicExercisesTestNG.NewRemoteTest@262b2c86</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTest.testWindows()'><b>testWindows</b><br>Test class: BasicExercisesTestNG.NewRemoteTest</td>
 <td></td>
 <td>0</td>
-<td>BasicExercisesTestNG.NewRemoteTest@57250572</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTest@262b2c86</td></tr>
 <tr>
 <td title='BasicExercisesTestNG.NewRemoteTestFF.testWindows()'><b>testWindows</b><br>Test class: BasicExercisesTestNG.NewRemoteTestFF</td>
 <td></td>
 <td>6</td>
-<td>BasicExercisesTestNG.NewRemoteTestFF@5609159b</td></tr>
+<td>BasicExercisesTestNG.NewRemoteTestFF@371a67ec</td></tr>
 </table><p>
 </body>
 </html>
