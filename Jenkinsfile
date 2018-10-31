@@ -1,21 +1,20 @@
 pipeline {
-    agent none 
+    agent any
+    tools { 
+        maven 'Default' 
+    }
     stages {
-        stage('Compile Stage') {
+        stage ('Compile') {
             steps {
-                withMaven(maven : Default){
-				sh 'mvn clean compile'
-				}
+                sh '''
+                    mvn compile
+                ''' 
             }
         }
-		        stage('Testing Stage') {
+        stage ('Test') {
             steps {
-                withMaven(maven : Default){
-				sh 'mvn test'
-				}
+                sh 'mvn test'
             }
-        }
-		
-
         }
     }
+}
