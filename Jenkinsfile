@@ -4,6 +4,11 @@ pipeline {
         maven 'Default' 
     }
     stages {
+        stage ('Run Docker Containers') {
+            steps {
+                sh 'docker-compose up'
+            }
+        }
         stage ('Compile') {
             steps {
                 sh 'mvn compile'
