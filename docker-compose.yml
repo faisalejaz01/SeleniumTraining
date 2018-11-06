@@ -1,0 +1,36 @@
+version: '2'
+
+services:
+  hub:
+    image: selenium/hub
+    ports:
+      - 4444:4444
+    environment:
+      - GRID_TIMEOUT=10000
+      - GRID_BROWSER_TIMEOUT=11000
+
+  firefox:
+    image: selenium/node-firefox-debug
+    ports:
+      - 4577
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+      NODE_MAX_SESSION: 1
+      NODE_MAX_INSTANCES: 1
+    volumes:
+      - /home/fsl/Desktop/firefox:/dev/shm
+
+  chrome:
+    image: selenium/node-chrome-debug:3.14.0-helium
+    ports:
+      - 4578
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+      NODE_MAX_SESSION: 1
+      NODE_MAX_INSTANCES: 1
+    volumes:
+      - /home/fsl/Desktop/chrome:/dev/shm
