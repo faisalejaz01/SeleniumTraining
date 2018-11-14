@@ -3,20 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BasicExercisesTestNG.NewRemoteTest">
+      <class name="test.java.NewRemoteFFTest">
         <methods>
-          <include name="testAlerts"/>
           <include name="testDropDown"/>
-          <include name="testDynamicWait"/>
-          <include name="testWebTables"/>
+          <include name="testLogin"/>
           <include name="testRadioButton"/>
           <include name="testWaitForTextAttribute"/>
+          <include name="testAlerts"/>
+          <include name="testWebTables"/>
           <include name="testWaitForHiddenObject"/>
+          <include name="testDynamicWait"/>
           <include name="testWindows"/>
           <include name="invokeBrowser"/>
-          <include name="testLogin"/>
         </methods>
-      </class> <!-- BasicExercisesTestNG.NewRemoteTest -->
+      </class> <!-- test.java.NewRemoteFFTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

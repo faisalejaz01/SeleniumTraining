@@ -1,247 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="2" total="20" passed="16">
+<testng-results skipped="0" failed="0" ignored="2" total="20" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="82243" started-at="2018-10-30T15:25:59Z" finished-at="2018-10-30T15:27:21Z">
+  <suite name="Suite" duration-ms="35752" started-at="2018-11-13T20:20:55Z" finished-at="2018-11-13T20:21:31Z">
     <groups>
     </groups>
-    <test name="RemoteTest" duration-ms="82243" started-at="2018-10-30T15:25:59Z" finished-at="2018-10-30T15:27:21Z">
-      <class name="BasicExercisesTestNG.NewRemoteTest">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="invokeBrowser" is-config="true" duration-ms="3394" started-at="2018-10-30T15:25:59Z" finished-at="2018-10-30T15:26:02Z">
+    <test name="RemoteTest" duration-ms="35752" started-at="2018-11-13T20:20:55Z" finished-at="2018-11-13T20:21:31Z">
+      <class name="test.java.NewRemoteFFTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:test.java.NewRemoteFFTest@77ec78b9]" name="invokeBrowser" is-config="true" duration-ms="3648" started-at="2018-11-13T20:20:55Z" finished-at="2018-11-13T20:20:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="invokeBrowser" is-config="true" duration-ms="3322" started-at="2018-10-30T15:26:02Z" finished-at="2018-10-30T15:26:06Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:test.java.NewRemoteTest@1e7c7811]" name="invokeBrowser" is-config="true" duration-ms="1335" started-at="2018-11-13T20:20:59Z" finished-at="2018-11-13T20:21:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="testLogin()[pri:1, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="testLogin" duration-ms="6810" started-at="2018-10-30T15:26:06Z" finished-at="2018-10-30T15:26:12Z">
+        <test-method status="PASS" signature="testLogin()[pri:1, instance:test.java.NewRemoteFFTest@77ec78b9]" name="testLogin" duration-ms="2955" started-at="2018-11-13T20:21:00Z" finished-at="2018-11-13T20:21:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testDropDown()[pri:2, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="testDropDown" duration-ms="784" started-at="2018-10-30T15:26:15Z" finished-at="2018-10-30T15:26:16Z">
+        <test-method status="PASS" signature="testDropDown()[pri:2, instance:test.java.NewRemoteFFTest@77ec78b9]" name="testDropDown" duration-ms="744" started-at="2018-11-13T20:21:03Z" finished-at="2018-11-13T20:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDropDown -->
-        <test-method status="PASS" signature="testRadioButton()[pri:3, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="testRadioButton" duration-ms="301" started-at="2018-10-30T15:26:16Z" finished-at="2018-10-30T15:26:17Z">
+        <test-method status="PASS" signature="testRadioButton()[pri:3, instance:test.java.NewRemoteFFTest@77ec78b9]" name="testRadioButton" duration-ms="648" started-at="2018-11-13T20:21:04Z" finished-at="2018-11-13T20:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadioButton -->
-        <test-method status="PASS" signature="testWebTables()[pri:4, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="testWebTables" duration-ms="487" started-at="2018-10-30T15:26:17Z" finished-at="2018-10-30T15:26:17Z">
+        <test-method status="PASS" signature="testWebTables()[pri:4, instance:test.java.NewRemoteFFTest@77ec78b9]" name="testWebTables" duration-ms="446" started-at="2018-11-13T20:21:04Z" finished-at="2018-11-13T20:21:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWebTables -->
-        <test-method status="PASS" signature="testDynamicWait()[pri:6, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="testDynamicWait" duration-ms="5652" started-at="2018-10-30T15:26:17Z" finished-at="2018-10-30T15:26:23Z">
+        <test-method status="PASS" signature="testDynamicWait()[pri:6, instance:test.java.NewRemoteFFTest@77ec78b9]" name="testDynamicWait" duration-ms="5444" started-at="2018-11-13T20:21:05Z" finished-at="2018-11-13T20:21:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDynamicWait -->
-        <test-method status="PASS" signature="testAlerts()[pri:7, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="testAlerts" duration-ms="374" started-at="2018-10-30T15:26:23Z" finished-at="2018-10-30T15:26:24Z">
+        <test-method status="PASS" signature="testAlerts()[pri:7, instance:test.java.NewRemoteFFTest@77ec78b9]" name="testAlerts" duration-ms="417" started-at="2018-11-13T20:21:11Z" finished-at="2018-11-13T20:21:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAlerts -->
-        <test-method status="PASS" signature="testWindows()[pri:8, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="testWindows" duration-ms="615" started-at="2018-10-30T15:26:24Z" finished-at="2018-10-30T15:26:24Z">
+        <test-method status="PASS" signature="testWindows()[pri:8, instance:test.java.NewRemoteFFTest@77ec78b9]" name="testWindows" duration-ms="7536" started-at="2018-11-13T20:21:11Z" finished-at="2018-11-13T20:21:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWindows -->
-        <test-method status="PASS" signature="testWaitForHiddenObject()[pri:10, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="testWaitForHiddenObject" duration-ms="5394" started-at="2018-10-30T15:26:30Z" finished-at="2018-10-30T15:26:35Z">
+        <test-method status="PASS" signature="testWaitForHiddenObject()[pri:10, instance:test.java.NewRemoteFFTest@77ec78b9]" name="testWaitForHiddenObject" duration-ms="5807" started-at="2018-11-13T20:21:18Z" finished-at="2018-11-13T20:21:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWaitForHiddenObject -->
-        <test-method status="FAIL" signature="testWaitForTextAttribute()[pri:11, instance:BasicExercisesTestNG.NewRemoteTest@262b2c86]" name="testWaitForTextAttribute" duration-ms="45552" started-at="2018-10-30T15:26:36Z" finished-at="2018-10-30T15:27:21Z">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IJELQFM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41703}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 9d8be7246ece980370c01f1127a...}
-Session ID: 9d8be7246ece980370c01f1127a05dde]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IJELQFM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41703}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 9d8be7246ece980370c01f1127a...}
-Session ID: 9d8be7246ece980370c01f1127a05dde
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
-at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1405)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$400(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1393)
-at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1389)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-at BasicExercisesTestNG.NewRemoteTest.testWaitForTextAttribute(NewRemoteTest.java:196)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Failed to connect to /10.238.242.216:4444
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-... 21 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-at java.net.PlainSocketImpl.connect(Unknown Source)
-at java.net.SocksSocketImpl.connect(Unknown Source)
-at java.net.Socket.connect(Unknown Source)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-... 41 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+        <test-method status="PASS" signature="testWaitForTextAttribute()[pri:11, instance:test.java.NewRemoteFFTest@77ec78b9]" name="testWaitForTextAttribute" duration-ms="6369" started-at="2018-11-13T20:21:24Z" finished-at="2018-11-13T20:21:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWaitForTextAttribute -->
-      </class> <!-- BasicExercisesTestNG.NewRemoteTest -->
-      <class name="BasicExercisesTestNG.NewRemoteTestFF">
-        <test-method status="PASS" signature="testLogin()[pri:1, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="testLogin" duration-ms="9735" started-at="2018-10-30T15:26:06Z" finished-at="2018-10-30T15:26:15Z">
+      </class> <!-- test.java.NewRemoteFFTest -->
+      <class name="test.java.NewRemoteTest">
+        <test-method status="PASS" signature="testLogin()[pri:1, instance:test.java.NewRemoteTest@1e7c7811]" name="testLogin" duration-ms="1319" started-at="2018-11-13T20:21:00Z" finished-at="2018-11-13T20:21:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testDropDown()[pri:2, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="testDropDown" duration-ms="984" started-at="2018-10-30T15:26:15Z" finished-at="2018-10-30T15:26:16Z">
+        <test-method status="PASS" signature="testDropDown()[pri:2, instance:test.java.NewRemoteTest@1e7c7811]" name="testDropDown" duration-ms="643" started-at="2018-11-13T20:21:03Z" finished-at="2018-11-13T20:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDropDown -->
-        <test-method status="PASS" signature="testRadioButton()[pri:3, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="testRadioButton" duration-ms="601" started-at="2018-10-30T15:26:16Z" finished-at="2018-10-30T15:26:17Z">
+        <test-method status="PASS" signature="testRadioButton()[pri:3, instance:test.java.NewRemoteTest@1e7c7811]" name="testRadioButton" duration-ms="378" started-at="2018-11-13T20:21:04Z" finished-at="2018-11-13T20:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadioButton -->
-        <test-method status="PASS" signature="testWebTables()[pri:4, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="testWebTables" duration-ms="456" started-at="2018-10-30T15:26:17Z" finished-at="2018-10-30T15:26:17Z">
+        <test-method status="PASS" signature="testWebTables()[pri:4, instance:test.java.NewRemoteTest@1e7c7811]" name="testWebTables" duration-ms="458" started-at="2018-11-13T20:21:04Z" finished-at="2018-11-13T20:21:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWebTables -->
-        <test-method status="PASS" signature="testDynamicWait()[pri:6, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="testDynamicWait" duration-ms="5737" started-at="2018-10-30T15:26:17Z" finished-at="2018-10-30T15:26:23Z">
+        <test-method status="PASS" signature="testDynamicWait()[pri:6, instance:test.java.NewRemoteTest@1e7c7811]" name="testDynamicWait" duration-ms="5790" started-at="2018-11-13T20:21:05Z" finished-at="2018-11-13T20:21:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDynamicWait -->
-        <test-method status="PASS" signature="testAlerts()[pri:7, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="testAlerts" duration-ms="304" started-at="2018-10-30T15:26:23Z" finished-at="2018-10-30T15:26:24Z">
+        <test-method status="PASS" signature="testAlerts()[pri:7, instance:test.java.NewRemoteTest@1e7c7811]" name="testAlerts" duration-ms="352" started-at="2018-11-13T20:21:11Z" finished-at="2018-11-13T20:21:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAlerts -->
-        <test-method status="PASS" signature="testWindows()[pri:8, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="testWindows" duration-ms="6446" started-at="2018-10-30T15:26:24Z" finished-at="2018-10-30T15:26:30Z">
+        <test-method status="PASS" signature="testWindows()[pri:8, instance:test.java.NewRemoteTest@1e7c7811]" name="testWindows" duration-ms="619" started-at="2018-11-13T20:21:11Z" finished-at="2018-11-13T20:21:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWindows -->
-        <test-method status="PASS" signature="testWaitForHiddenObject()[pri:10, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="testWaitForHiddenObject" duration-ms="5578" started-at="2018-10-30T15:26:30Z" finished-at="2018-10-30T15:26:36Z">
+        <test-method status="PASS" signature="testWaitForHiddenObject()[pri:10, instance:test.java.NewRemoteTest@1e7c7811]" name="testWaitForHiddenObject" duration-ms="5349" started-at="2018-11-13T20:21:18Z" finished-at="2018-11-13T20:21:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWaitForHiddenObject -->
-        <test-method status="FAIL" signature="testWaitForTextAttribute()[pri:11, instance:BasicExercisesTestNG.NewRemoteTestFF@371a67ec]" name="testWaitForTextAttribute" duration-ms="45417" started-at="2018-10-30T15:26:36Z" finished-at="2018-10-30T15:27:21Z">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IJELQFM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 102, moz:profile: /tmp/rust_mozprofile.xf4ZCJ..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-38-generic, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: baca0524-a877-449c-abde-bd1...}
-Session ID: baca0524-a877-449c-abde-bd1535308fd6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-IJELQFM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 102, moz:profile: /tmp/rust_mozprofile.xf4ZCJ..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-38-generic, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: baca0524-a877-449c-abde-bd1...}
-Session ID: baca0524-a877-449c-abde-bd1535308fd6
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)
-at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1405)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$400(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1393)
-at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1389)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-at BasicExercisesTestNG.NewRemoteTestFF.testWaitForTextAttribute(NewRemoteTestFF.java:202)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Failed to connect to /10.238.242.216:4444
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-... 21 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-at java.net.PlainSocketImpl.connect(Unknown Source)
-at java.net.SocksSocketImpl.connect(Unknown Source)
-at java.net.Socket.connect(Unknown Source)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-... 41 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+        <test-method status="PASS" signature="testWaitForTextAttribute()[pri:11, instance:test.java.NewRemoteTest@1e7c7811]" name="testWaitForTextAttribute" duration-ms="5850" started-at="2018-11-13T20:21:24Z" finished-at="2018-11-13T20:21:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWaitForTextAttribute -->
-      </class> <!-- BasicExercisesTestNG.NewRemoteTestFF -->
+      </class> <!-- test.java.NewRemoteTest -->
     </test> <!-- RemoteTest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -30,7 +30,8 @@ public class NewRemoteFFTest {
 		DesiredCapabilities firefox = DesiredCapabilities.firefox();
 		firefox.setBrowserName("firefox");
 		firefox.setPlatform(Platform.LINUX);
-		driver = new RemoteWebDriver(new URL("http://10.238.242.216:4444/wd/hub"), firefox);
+		//driver = new RemoteWebDriver(new URL("http://10.238.242.216:4444/wd/hub"), firefox);
+		driver = new RemoteWebDriver(new URL("http://40.76.70.87:4444/wd/hub"), firefox);
 
 		// String chromeDriverPath = "C:\\chromedriver\\chromedriver.exe";
 		// System.setProperty("webdriver.chrome.driver", chromeDriverPath);
