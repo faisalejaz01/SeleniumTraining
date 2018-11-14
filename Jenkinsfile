@@ -1,46 +1,33 @@
 
 pipeline {
     agent any
-    tools { 
-        maven 'Default' 
-    }
     stages {
-
-        stage ('Docker-Compose UP') {
+        stage ('Check Docker') {
             steps {
-                
-                sh '''
-                    docker ps
-                    docker-compose up -d
-                    '''
-            }
-        }
-        
-        stage ('Docker Processes') {
-            steps {
-                sh 'docker ps'
+                bat 'echo %DOCKER_HOST%'
+                bat 'docker ps'
             }
         }
 
-        stage ('Compile') {
+        stage ('Start Docker Stack') {
             steps {
-                sh 'mvn compile'
+                bat '''
+                docker stack deploy --compose-file stack1.yml grid
+                '''
             }
         }
-        
         stage ('Test') {
             steps {
-                sh 'mvn test'
+                bat '''
+                docker ps
+                mvn clean install
+                '''
             }
         }
-          
-        stage ('Docker Compose DOWN') {
+        stage ('Stop Docker Stack') {
             steps {
-                
-                sh '''
-                    docker ps
-                    docker-compose down 
-                    '''
+                bat 'docker ps'
+                bat 'docker stack rm grid'
             }
         }
     }
