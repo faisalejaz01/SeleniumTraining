@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,16 +28,20 @@ public class NewRemoteTest {
 	@BeforeTest
 	public void invokeBrowser() throws MalformedURLException {
 
-		DesiredCapabilities chrome = DesiredCapabilities.chrome();
-		chrome.setBrowserName("chrome");
-		chrome.setPlatform(Platform.LINUX);
-		driver = new RemoteWebDriver(new URL("http://10.238.242.216:4444/wd/hub"),chrome);
+//		DesiredCapabilities chrome = DesiredCapabilities.chrome();
+//		chrome.setBrowserName("chrome");
+//		chrome.setPlatform(Platform.LINUX);
+//		driver = new RemoteWebDriver(new URL("http://10.238.242.216:4444/wd/hub"), chrome);
+		
+		ChromeOptions options = new ChromeOptions();
+		
+		driver = new RemoteWebDriver(new URL("http://40.76.70.87:4444/wd/hub"), options);
 
 		// String chromeDriverPath = "C:\\chromedriver\\chromedriver.exe";
 		// System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 
 		driver.manage().deleteAllCookies();
-		//driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -147,7 +152,7 @@ public class NewRemoteTest {
 
 	}
 
-	@Test(enabled=false)
+	@Test(enabled = false)
 	public void testFileUpload() {
 
 		File filePath = new File(".\\uploadTest.txt");
